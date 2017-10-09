@@ -21,6 +21,7 @@ public class User {
 	    this.password = password;
 	    
 	  }
+	  
 	  @Override
 	  public String toString()
 	  {
@@ -35,6 +36,7 @@ public class User {
 	  {  
 	     return Objects.hashCode(this.lastName, this.firstName, this.email, this.password);  
 	  }
+	  
 	  
 }
 
