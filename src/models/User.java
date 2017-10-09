@@ -1,4 +1,5 @@
 package models;
+import static com.google.common.base.MoreObjects.toStringHelper;
 
 public class User {
 	  public String firstName;
@@ -16,6 +17,16 @@ public class User {
 	    this.lastName = lastName;
 	    this.email = email;
 	    this.password = password;
+	    
+	  }
+	  public String toString()
+	  {
+	    return toStringHelper(this).addValue(firstName)
+	                               .addValue(lastName)
+	                               .addValue(password)
+	                               .addValue(email)                               
+	                               .toString();
 	  }
 
 }
+
