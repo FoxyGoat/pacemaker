@@ -4,11 +4,12 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+
 import models.User;
 
 public class PacemakerAPI
 {
-	  private Map<String, User> users = new HashMap<String, User>();
+	  private Map<String, User> users = new HashMap<>();
 
 	  public Collection<User> getUsers ()
 	  {
@@ -25,7 +26,9 @@ public class PacemakerAPI
     User user = new User (firstName, lastName, email, password);
     users.put(email, user);
     return user;
+   
   }
+  
 
   public User getUser(String email) 
   {
@@ -35,4 +38,6 @@ public class PacemakerAPI
   {
     users.remove(email);
   }
+  
+  
 }

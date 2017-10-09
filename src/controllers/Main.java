@@ -1,9 +1,12 @@
 package controllers;
 
 import java.io.IOException;
-import java.util.List;
+import java.util.Collection;
 
 import models.User;
+
+
+
 
 public class Main
 {
@@ -15,7 +18,9 @@ public class Main
     pacemakerAPI.createUser("Homer", "Simpson", "homer@simpson.com", "secret");
     pacemakerAPI.createUser("Lisa",  "Simpson", "lisa@simpson.com",  "secret");
 
-    List<User> users = (List<User>) pacemakerAPI.getUsers();
+   Collection<User> users =  pacemakerAPI.getUsers();
     System.out.println(users);
+    
   }
+  
 }
